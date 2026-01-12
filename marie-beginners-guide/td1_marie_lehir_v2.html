@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Beginner’s Guide to Website Speed Optimization</title>
+    <style>
+
+        /* Ex1 typologie */
+	    :root {
+            font-family: "Times New Roman", Times, serif; 
+            line-height: 1.4; 
+            font-size: 120%; 
+        }
+
+        html,body{
+            margin: 0;
+        }
+
+        header,main{
+            width: 900px;
+            margin: auto;
+        }
+
+        h1, h2, h3, .title, .toc, footer {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+			color:black; 
+			background-color:white;
+            background-image: url(optim-images/top_bg.jpg);
+            background-position: center top;
+            background-repeat: repeat-x;
+		}
+
+        h1 {
+            font-size: 4rem;
+            color:darkcyan;
+            text-align: center;
+			margin: 50px 0 550px 0;
+			padding: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            background-color:whitesmoke;
+            padding: 1rem;
+			margin: 2rem 0 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            padding: 0;
+			margin: 1rem 0 0.5rem;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        a {
+            font-weight: bold; 
+            text-decoration: none;
+            color:lightseagreen;
+        }
+
+        a:hover {
+            text-decoration: underline; 
+        }
+
+        .toc {
+            font-size: 0.9rem;
+            list-style: none;
+            display: inline-block;
+        }
+
+        footer {
+			background-color:dimgray;
+            text-align: center;
+            padding: 0.5rem 0;
+            margin: 1rem 0 0 0;
+		}
+
+        p  {
+            padding: 0;
+            margin: 0.5rem 0 0.5rem;
+        }
+
+		h2 .counter {
+			color:white;
+			background-color:orangered;
+            padding: 0 0.5rem;
+        }
+
+        /* table des matieres */
+        .toc a:not(:hover) { 
+			color:white;
+			background-color:lightseagreen;
+		}
+
+        /* encadres */
+        .framed{
+            padding: 0.5rem;
+			border-radius: 0.5rem;
+			background-color:lightcyan;
+			border: 1px solid lightseagreen; 
+			margin: 0.5rem 4em 0.5rem;
+        }
+        
+        figure{
+            float: left;
+            margin-left: 25%;
+        }
+
+        
+        .framed img {
+            max-width: 55px;
+        }
+
+        /* colophon */ 
+        .colophon{
+            background-color: whitesmoke;
+            color:dimgray;
+            border-color: black;
+        }
+        
+        .colophon img {
+            border-radius: 25%;
+            width: 300px;
+            height: 150px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>A Beginner’s Guide to Website Speed Optimization</h1>
+        
+
+        <article class="introduction">
+            <p> Website performance optimization, the focal point of technologically superior website
+            designs is the primary factor dictating success for modern online
+            businesses. After all, unimpressive website performance kills business
+            bottom line when the torture of waiting for slow Web pages to load
+            frustrates visitors into seeking alternatives – impatience is a digital virtue! </p> 
+            
+            <p class="title">And speed sells!</p>
+            
+            <p>We created the following six chapter
+            in-depth speed optimization guide to show you how important it is to
+            have a fast loading, snappy website! Countless research papers and
+            benchmarks prove that optimizing your sites' speed is one of the most
+            affordable and highest ROI providing investments!</p>
+            
+            <p> In the following guide we'll try to
+            explain the technical details while at the same time provide you with
+            easy to follow instructions that you can start implementing right away!
+            We hope you'll find it valuable (and perhaps share-worthy! :) ). </p>
+            
+            <p>Lightning-fast page load speed amplifies visitor engagement, retention, and boosts sales. Instantaneous
+            website response leads to maximum conversion rates, and every 1 second
+            delay in page load decreases customer satisfaction by 16 percent, page
+            views by 11 percent and conversion rates by 7 percent according to a
+            recent <a href="http://loadstorm.com/2014/04/infographic-web-performance-impacts-conversion-rates/"> Aberdeen Group research</a> </p>
+        </article>
+
+        <nav class="toc">
+            <ol>
+                <li><a href="#chapter-1">Chapter 1 Introduction to Website Speed Optimization</a></li>
+                <li><a href="#chapter-2">Chapter 2 Website Performance Impacts Business Success</a></li>
+                <li><a href="#chapter-3">Chapter 3 Speed Optimized Mobile Website Overshadows Desktop Internet Success</a></li>
+                <li><a href="#chapter-4">Chapter 4 Common Business Mistakes that Kill Website Performance</a></li>
+                <li><a href="#chapter-5">Chapter 5 Website Speed Testing – Identify Performance Bottlenecks!</a></li>
+                <li><a href="#chapter-6">Chapter 6 How to Improve Website Speed?</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section id="chapter-1">
+            
+            <h2>  <span class="counter">Chapter 1</span>
+                Introduction to Website Speed Optimization </h2>
+
+            <section>
+                <h3>But What Exactly is Page Speed?</h3>
+                    <p>The term essentially refers to
+                    the speed with which Web pages or media content is downloaded from
+                    website hosting servers and displayed onto the requesting Web browser.
+                    Page load time is the duration between clicking the link and displaying
+                    the entire content from the Web page on the requesting browser.</p>
+
+                    <p>There are three core aspects necessary to understand page speed in context of user experience and website performance:</p>
+                    <ul>
+                        <li>The view of time taken in delivering the requested material along with the accompanying HTML content to the browser.</li>
+                        <li>Browser response to page load requests.</li>
+                        <li>The view of end-users as the requested web page renders on 
+                            the browser – this is the ultimate empirical measure of page load speed.</li>
+                    </ul>
+
+                    <p>Website performance subsequently impacts search engine
+                    rankings developed under proprietary and undisclosed algorithms,
+                    incorporating key factors including page speed, user experience, website
+                    responsiveness and a whole lot of other website performance metrics.</p>
+
+                    <p>The absolute critical principle in
+                    maximizing website performance is to focus on page speed optimization
+                    from the ground up. Performance optimization plugins, server side
+                    scripts and final tweaks have minimal – however noticeable – impact on
+                    page speed and load times. Yet, Web developers and online business
+                    owners tend to overlook page load times in their website development and
+                    design strategies.</p>
+                </section>
+
+                <section>
+                <h3>Slow? How Slow?</h3>
+                    <p>Anything slower than the blink of an eye – <a href="http://www.nytimes.com/2012/03/01/technology/impatient-web-users-flee-slow-loading-sites.html?pagewanted=all">400 milliseconds</a>
+                    Engineers at Google have discovered that the barely perceptible page
+                    load time 0.4 seconds is long enough to cause users to search less.</p>
+
+                    <aside class="framed">
+                        <figure><img src="optim-images/hourglass.png" alt="hourglass"></figure>
+                        <p>Microsoft speed specialist and computer scientist Harry Shum believes 0.25
+                        seconds of difference in page load time – faster or slower – is the
+                        magic number dictating competitive advantages for online businesses.</p>
+                    </aside>
+
+                    <p>The technology has come a long way in
+                    improving internet experience. The over-crowded cyberworld of the 1990s
+                    was often labeled as the World Wide Wait, but innovations in
+                    communication and networking technologies have revolutionized the way
+                    digital information is transmitted across the internet. The next
+                    generation of online businesses have all the resources they need to
+                    deliver content instantaneously, but to leverage and complement these
+                    resources, businesses need speed-optimized websites that deliver the
+                    best user experience.</p>
+
+                    <p>And what happens when they don’t?</p>
+
+                    <p> <a href="http://loadstorm.com/2014/04/infographic-web-performance-impacts-conversion-rates/"> 1 in 4 visitors</a>
+                    would abandon the website if it takes more than 4 seconds to load. 46
+                    percent of users don’t revisit poorly performing websites. Website
+                    owners have mere 5 seconds to engage visitors before they consider
+                    leaving. 74 percent of users accessing the mobile site would leave if it
+                    takes longer than 5 seconds to load. Every one-second delay in page
+                    load time could lead to <a href="http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales">$1.6 billion in annual losses</a> for online merchants as big as Amazon.</p>
+
+
+                    <p> <a href="http://blog.kissmetrics.com/loading-time/">47 percent</a>
+                    of ecommerce customers expect page load times of less than two seconds
+                    before they consider leaving – 40 percent of users would abandon the
+                    site at the third second of waiting, before a performance analytics tool
+                    even captures their presence on the site. The average peak load time
+                    for conversions is mere 2 seconds – faster than millions of websites out
+                    there. </p>
+
+                    <p>And what happens when they speed up?</p>
+
+                    <aside class="framed">
+                        <figure><img src="optim-images/clock.png" alt="clock"></figure>
+                        <p> When Mozilla increased page speed by 2.2 seconds, Firefox download figures rose by 15.4 percent, 
+                        or <a href="http://loadstorm.com/2014/04/infographic-web-performance-impacts-conversion-rates/">10 million per year</a>! Walmart 
+                        <a href="http://www.websitemagazine.com/content/blogs/posts/archive/2014/03/21/5-reasons-visitors-leave-your-website.aspx">saw 2 percent increase in conversion rates for every 1 second</a> improvement in page load times. The numbers don’t lie! </p>
+                    </aside>
+                </section>
+
+                <section>
+                <h3>Acceptable Website Performance – The Neuroscience and Rhythm</h3>
+
+                    <p>Google researchers suggest page load
+                    times of less than 100 milliseconds give visitors the illusion of
+                    instantaneous website response as the visual Sensory memory processor in
+                    our brain works in bursts of 100 milliseconds. The memory store clears
+                    itself after 0.1 seconds as photoreceptor cells in the eyes transmit
+                    more information to the Occipital lobe.</p>
+
+                    <aside class="framed">
+                        <figure><img src="optim-images/eye_see.png" alt="see"></figure>
+                        <p> 100 milliseconds. That’s how long the Occipital lobe in our brain stores visual information as a Sensory memory.</p>
+                    </aside>
+
+                    <p>1 second of page load time does suffice
+                    in maintaining seamless flow of thought – users feel in control of
+                    their Web browsing activities, and the mental stress is not aggravated
+                    unless the website fails to respond as desired.</p>
+
+                    <p>At 10 seconds of delay, visitor
+                    attention is barely kept. The sensation of impatience, frustration and
+                    feeling of abandonment is usually strong enough to keep visitors from
+                    revisiting such slow websites again.</p>
+                </section>
+
+                <section>
+                <h3>The Pragmatic Psychological Conundrum</h3>
+                    <p>However, abandoning a website due to slow page speed is not
+                    always the quickest path to access the desired information on the Web.
+                    An average user would spend several extra minutes browsing
+                    fast-responding but irrelevant websites, instead of waiting a few more
+                    seconds for sluggish relevant websites to respond.</p>
+
+                    <p>And considering the sea of resources on
+                    the Web, users eventually find the required information on some website
+                    or the other. But the eventual losers are online businesses unable to
+                    reach their online customers fast enough, despite hosting the exact
+                    information and services being sought.</p>
+
+                    <p>Strange enough, visitors would rather
+                    spend excessive time browsing for the information elsewhere than waiting
+                    a few seconds for the right website to load. The experience is similar
+                    to the <a href="http://www.nytimes.com/2012/08/19/opinion/sunday/why-waiting-in-line-is-torture.html">Houston airport incident</a> 
+                    from a few years back that led to a clever solution.</p>
+
+                    <figure><img src="optim-images/airport.jpg" alt="airport"></figure>
+
+                    <p>Passengers at the airport had to take a 1 minute walk to the
+                    baggage claim and waited there for 7 minutes to receive their bags. The
+                    customer relations center was ultimately inundated with complaints for
+                    the slow service.</p>
+
+                    <p>So the airport executives came up with a
+                    cunning solution to "resolve’ the issue. They moved the arrival gates
+                    far away and routed the luggage to the outermost carousel.</p>
+
+                    <p>Passengers now had to take a 6 minute walk to the baggage claim area where they received their luggage within 2 minutes.
+                    The result? Zero complaints. Absolutely no passenger left unsatisfied – except with some tired legs.
+                    Similarly, elevators contain mirrors so the passengers keep busy in styling themselves and not thinking about the time spent travelling.</p>
+
+                    <p>This passenger behavior is analogous to that of website visitors in the cyberworld. And the same general
+                    principle applies for online businesses as well: It is the objective length of wait that defines the experience of waiting.</p>
+
+                    <p>Now, online businesses can play with human psychology like
+                    the Houston airport executives and speed up evolution, but with
+                    virtually no specific formula to make website response times bearable
+                    for every individual visitor out there. Or they can actually reduce the
+                    objective length of wait in delivering the requested content to their
+                    online visitors with a fast responding website – whichever is possible
+                    when the website is designed to deliver instantaneous response and high
+                    quality, seamless user experience.</p>
+
+                    <p> This guide will focus on the latter
+                    practice, and will actually help you maximize the potential of your
+                    online business by optimizing website performance and thereby enhancing
+                    customer satisfaction, retention and loyalty.</p>
+                </section>
+        </section>
+
+        <section id="chapter-2">
+            <h2> <span class="counter">Chapter 2</span>
+            Website Performance Impacts Business Success</h2>
+
+                <p>Website performance is user
+                experience – the power of page speed, translating into attractive online
+                shopping experience inspires sales figures and eventually determines
+                online business success. The industry kingpin Google began factoring
+                page speed into its proprietary search algorithms ever since it
+                experienced the compelling repercussions of website performance lapses
+                impacting sales. […]</p>
+        </section>
+
+        <section id="chapter-3">
+            <h2><span class="counter">Chapter 3</span>
+            Speed Optimized Mobile Website Overshadows Desktop Internet Success</h2>
+
+                <p>Mobile is the future of
+                everything wired. Adoption is skyrocketing as the mobile device
+                onslaught looks to encompass the entire human race – <a href="http://www.dazeinfo.com/2014/01/23/smartphone-users-growth-mobile-internet-2014-2017/">1.75 billion smartphone subscriptions</a>,
+                around one-fifth of the global population in 2014. And the booming
+                tides of stimulating repercussions continue to disturb online businesses
+                barely making inroads into the mobile internet marketing segment. […]</p>
+        </section>
+
+        <section id="chapter-4">
+            <h2><span class="counter">Chapter 4</span>
+            Common Business Mistakes that Kill Website Performance</h2>
+
+                <p>Online marketplaces – like
+                battle grounds of the ancient Greeks – are high-stake competitive
+                platforms where only the most diligent survive. And as with all
+                high-stake battles, human factors (decision errors, blunders and
+                ignorance) contribute significantly toward the outcome of online
+                business competitions. […]</p>
+        </section>
+
+        <section id="chapter-5">
+            <h2><span class="counter">Chapter 5</span>
+            Website Speed Testing – Identify Performance Bottlenecks!</h2>
+
+                <p>Web traffic and search engine
+                ranking is primarily a vanity metric for website performance. Important
+                as they are, neither is more indicative of online business success than
+                sales figures and conversion rates. Putting things into perspective,
+                ecommerce websites with (almost) zero percent bounce rate, 15 percent
+                conversion rates and 10,000 unique website visitors from low search
+                engine rankings fare far better than high ranking sites enjoying 100,000
+                unique visits with only 0.01 percent conversion rate. […]</p>
+        </section>
+
+        <section id="chapter-6">
+            <h2><span class="counter">Chapter 6</span>
+            How to Improve Website Speed?</h2>
+
+                <p>Developing a great website takes
+                great work. Leading online businesses leverage industry proven
+                experience, supernatural Web development skills and a killer Web hosting
+                service to develop websites boasting top-notch performance figures and
+                user experience. But for those who miss this starting point in their
+                pursuit of speed optimized websites, employing a minimalistic approach
+                in executing simple DIY page speed optimization tactics works (almost)
+                well enough to patch slow websites. […]</p>
+        </section>
+
+        <aside class="framed colophon"> 
+            <figure><img src="optim-images/author_mark.jpg" alt="author_mark"></figure>
+            <p> Written by Mark Gavalda and the Kinsta Team
+            Mark is a DevOps guy and head honcho at <a href="https://kinsta.com/">Kinsta</a>,
+            a performance WordPress hosting company. He has been working with WP
+            for more than 8 years and built hundreds of WP based websites. He's an
+            (occasionally fixie) biker and dog lover! </p>
+
+            <p class="copyright">
+                © Kinsta.
+                Published:<time class="published" datetime="2014-08-29">Aug 29, 2014</time>.
+                Last updated: <time class="updated" datetime="2014-09-03">Sep 03, 2014</time>.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <aside>
+            <a href="https://kinsta.com/"><img src="optim-images/logo_white.png" alt="logo_white"></a>
+        </aside>
+    </footer>
+</body>
+</html>
